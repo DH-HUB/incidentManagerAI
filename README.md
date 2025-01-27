@@ -66,11 +66,24 @@ Elle intègre des fonctionnalités basées sur l'intelligence artificielle pour 
 
 ## Utilisation
 ### Endpoints API
-GET /api/incidents : Récupérer tous les incidents.
-POST /api/incidents : Ajouter un nouvel incident.
-PUT /api/incidents/{id} : Mettre à jour un incident.
-DELETE /api/incidents/{id} : Supprimer un incident.
-GET /api/incidents/duplicates : Détecter les doublons.
+- **GET /api/incidents** : Récupérer tous les incidents.
+- **POST /api/incidents** : Ajouter un nouvel incident.
+- **PUT /api/incidents/{id}** : Mettre à jour un incident.
+- **DELETE /api/incidents/{id}** : Supprimer un incident.
+- **GET /api/incidents/duplicates** : Détecter les doublons.
 
+## Tests
+
+Ce projet utilise une approche **TDD (Test-Driven Development)** pour le backend. Les tests unitaires sont situés dans le dossier :
+src/test/java/com/example/incidentmanagerai.
+
+Pour exécuter les tests :
+mvn test
+
+## Auteur
+Développé par Hakima Djermouni.
+
+## Licence
+Ce projet est sous licence [MIT](LICENSE).
 
 
