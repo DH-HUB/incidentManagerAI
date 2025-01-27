@@ -40,5 +40,37 @@ Elle intègre des fonctionnalités basées sur l'intelligence artificielle pour 
 
 #### Backend (Spring Boot)
 1. Clonez ce dépôt :
-   ```bash
    git clone https://github.com/DH-HUB/incidentManagerAI.git
+
+2. Accédez au dossier backend :
+   cd IncidentManagerAI/backend
+   
+3. Compilez et lancez le backend :
+   mvn spring-boot:run
+
+4. Ouvrez votre navigateur et accédez à :
+   http://localhost:8080
+
+#### Frontend (Vue.js)
+1. Accédez au dossier frontend :
+   cd IncidentManagerAI/frontend
+   
+3. Installez les dépendances :
+   npm install
+   
+5. Lancez le serveur de développement :
+   npm run dev
+
+6. Ouvrez votre navigateur à :
+   http://localhost:5173
+
+## Utilisation
+### Endpoints API
+GET /api/incidents : Récupérer tous les incidents.
+POST /api/incidents : Ajouter un nouvel incident.
+PUT /api/incidents/{id} : Mettre à jour un incident.
+DELETE /api/incidents/{id} : Supprimer un incident.
+GET /api/incidents/duplicates : Détecter les doublons.
+
+
+
