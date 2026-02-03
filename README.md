@@ -116,6 +116,7 @@ mvn test
 Les tests peuvent utiliser un profil `test` via `backend/src/test/resources/application-test.yml` pour stabiliser les seuils et la base H2 en mémoire.
 
 ---
+Copyright (c) 2026 Hakima Djermouni
 
 ## Licence
 
