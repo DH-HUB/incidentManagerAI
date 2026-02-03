@@ -1,0 +1,15 @@
+# Backend
+backend/target/
+backend/.idea/
+backend/.classpath
+backend/.project
+backend/.settings/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:incidentsdb_test;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    open-in-view: false
+
+logging:
+  level:
+    root: WARN
+
+app:
+  similarity:
+    #Seuils plus permissifs pour rendre les tests deterministes
+    duplicate-threshold: 0.40
+    suggestion-threshold: 0.20
+    max-suggestions: 5

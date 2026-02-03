@@ -1,0 +1,30 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:incidentsdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+    open-in-view: false
+
+logging:
+  level:
+    org.hibernate.SQL: INFO
+
+app:
+  similarity:
+    duplicate-threshold: 0.45
+    suggestion-threshold: 0.20
+    max-suggestions: 5
